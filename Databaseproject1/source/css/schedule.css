@@ -1,0 +1,272 @@
+    @charset "UTF-8";
+
+    @font-face {
+    font-family: "galmat";
+    src: url("galmat.ttf") format("truetype");
+    font-weight: normal;
+    }
+
+    @font-face {
+    font-family: "kyuri";
+    src: url("kyuri.ttf") format("truetype");
+    font-weight: normal;
+    }
+
+    @font-face {
+        font-family: "ssangmundong";
+        src: url("Typo_SsangmunDongB.ttf") format("truetype");
+        font-weight: normal;
+    }
+
+    @font-face {
+        font-family: "DXKPMB";
+        src: url("DXKPMB-KSCpc-EUC-H.ttf") format("truetype");
+        font-weight: normal;
+    }
+
+::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #E3E8F8;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #6b778b;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #668bcb;
+    }
+    ::selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+    ::-moz-selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+    ::-webkit-selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+
+    body {
+        margin: 5%;
+        padding: auto;
+        background-color: #fff;
+        background-image: url("../img/back.png");
+        background-size: 300px;
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+
+
+.container {
+
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+}
+
+.left_area {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    border-right: 1px solid #313131;
+    line-height: normal;
+    z-index: 20;
+}
+
+.button {
+
+    font-family: "galmat";
+    display: block;
+    overflow: hidden;
+}
+
+.add_but {
+            font-family: "DXKPMB";
+    cursor: pointer;
+    border: none;
+    background-color:#3E588F;
+    padding: 8px;
+    float: left;
+    color: #FFF;
+}
+
+.mini_calender {
+
+    display: block;
+    margin: 25px 30px 30px 20px;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.calender_header {
+
+    position: relative;
+    margin: 0 0 7px;
+    display: block;
+}
+
+.calender_header button {
+
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+#prev-month-btn {
+
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+#next-month-btn {
+
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+.month-year {
+            font-family: "DXKPMB";
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.calendar-body table {
+
+    width: 100%;
+}
+  
+.calendar-body th,
+.calendar-body td {
+            font-family: "DXKPMB";
+    padding: 5px;
+    text-align: center;
+}
+  
+.calendar-body td.disabled {
+
+    color: #ccc;
+}
+  
+.calendar-body td.today {
+            font-family: "DXKPMB";
+    font-weight: bold;
+}
+  
+.calendar-body td.selected {
+
+    background-color: #ccc;
+    color: #fff;
+}
+
+.add-form {
+
+    display: none;
+    position: absolute;
+    top: 330px;
+    left: 0;
+    bottom: 50px;
+    right: 0;
+    margin: 10px;
+}
+
+.table {
+
+    position: absolute;
+    top: 0;
+    right: 100px;
+    left: 350px;
+    bottom: 0;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.schedule_table {
+
+    margin: auto;
+    width: 900px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.table_tr_first {
+
+    background: #3E588F;
+    color: #fff;
+    border-top: 1px solid #C0C5CD; 
+    border-bottom: 1px solid #C0C5CD;
+}
+
+th {
+            font-family: "DXKPMB";
+    padding: 20px;
+}
+
+.day {
+
+    background:#fff;
+}
+
+td {
+            font-family: "DXKPMB";
+    padding: 15px;
+}
+
+.add-form {
+            font-family: "DXKPMB";
+    display: none;
+}
+
+.add_schedule_but {
+            font-family: "DXKPMB";
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#3E588F;
+    padding: 8px;
+    color: #FFF;
+}
+
+.form_input {
+    font-family: "DXKPMB";
+    width: auto;
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+tr {
+
+    background-color: #E3E8F8;
+}
+
+p {
+    font-family: "DXKPMB", "함초롬바탕";
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-list {
+    font-family: "DXKPMB";
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: "galmat";
+    text-align: center;
+    margin-bottom: 18px;
+}

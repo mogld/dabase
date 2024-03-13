@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@font-face {
+font-family: "galmat";
+src: url("galmat.ttf") format("truetype");
+font-weight: normal;
+}
+
+@font-face {
+font-family: "kyuri";
+src: url("kyuri.ttf") format("truetype");
+font-weight: normal;
+}
+
+@font-face {
+    font-family: "ssangmundong";
+    src: url("Typo_SsangmunDongB.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "DXKPMB";
+    src: url("DXKPMB-KSCpc-EUC-H.ttf") format("truetype");
+    font-weight: normal;
+}
+
+
+::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #E3E8F8;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #6b778b;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #668bcb;
+    }
+::selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+::-moz-selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+::-webkit-selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+
+body {
+    padding: auto;
+    background-color: #fff;
+    background-image: url("../img/back.png");
+    background-size: 300px;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.container {
+  width: 100%;
+  display: block;
+}
+
+.login_session_box {
+  max-width: 420px;
+  padding: 64px 0 0;
+  margin: 0 auto 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+.login_box_header {
+  padding: 0 0 40px;
+  display: block;
+}
+
+.text_Gull {
+  height: 70px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+                font-family: "ssangmundong";
+  color: #3e588f;
+  font-size: 48px;
+  letter-spacing: -3px;
+}
+
+.panel_inner {
+  padding: 20px 28px;
+}
+
+.input_row {
+  display: flex;
+  table-layout: fixed;
+  width: 100%;
+  padding: 14px 17px 13px;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  border: 1px solid #dadada;
+  text-align: left;
+}
+
+.icon_id_p {
+  display: inline-block;
+  width: 35px;
+  vertical-align: middle;
+}
+
+.icon_id {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  margin-top: -8px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-image: url("..\\img\\id.png");
+  background-size: contain;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.id_p_text {
+              font-family: "DXKPMB";
+  padding-right: 30px;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  border: none;
+  outline: none;
+}
+
+.icon_password {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  margin-top: -8px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-image: url("..\\img\\password.png");
+  background-size: contain;
+}
+
+.login {
+              font-family: "DXKPMB";
+                               line-height: 20px;
+  display: block;
+  width: 100%;
+  padding: 13px 0 13px;
+  border-radius: 6px;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  background-color: #3e588f;
+  box-sizing: border-box;
+  color: #ffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sign {
+              font-family: "DXKPMB";
+                    line-height: 20px;
+  border: none;
+  background-color: #fff;
+  float: right;
+}
+
+

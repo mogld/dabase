@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "galmat";
+  src: url("galmat.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "kyuri";
+  src: url("kyuri.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  margin: 5%;
+  padding: auto;
+  background-color: #fff;
+  background-image: url("../img/back.png");
+  background-size: 300px;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+p {
+    font-family: "DXKPMB", "함초롬바탕";
+}
+table {
+  font-family: "kyuri", "함초롬돋움";
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  width: 98%;
+  border: 0;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.addbtn {
+  text-align: right;
+}
+
+.fback {
+  margin: 10px;
+  background: #c0c5cd;
+  color: #000;
+  padding: 10px;
+  outline: 0;
+  line-height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #000;
+  outline: 0;
+  transition: background 0.5s;
+  box-shadow: 1px 1px 2px gray;
+}
+
+image {
+  display: block;
+}
+tbody {
+  cursor: pointer;
+  height: 40px;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+  cursor: hand;
+}
+
+details {
+  margin: 5px 0 10px;
+}
+details > summary {
+  background: #e3e8f8;
+  color: #000;
+  padding: 10px;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.5s;
+  text-align: left;
+  box-shadow: 1px 1px 2px gray;
+}
+details > summary::marker {
+  content: none;
+}
+
+details[open] > summary {
+  background: #e3e8f8;
+}
+details[open] > summary ~ * {
+  animation: reveal 0.5s;
+}
+.det {
+  font-family: "함초롬바탕", "함초롬돋움";
+  background: #fff;
+  color: #000;
+  margin: 10px 0 10px;
+  padding: 20px;
+  line-height: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px gray;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

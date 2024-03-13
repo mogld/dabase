@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "galmat";
+  src: url("galmat.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "kyuri";
+  src: url("kyuri.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: "ssangmundong";
+    src: url("Typo_SsangmunDongB.ttf") format("truetype");
+    font-weight: normal;
+}
+
+thead {
+  height: 40px;
+  font-family: "kyuri", "함초롬바탕";
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#push {
+  font-family: "kyuri", "함초롬바탕";
+  font-size: medium;
+  font-weight: bold;
+  text-align: right;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "galmat", "함초롬바탕";
+}
+h5,
+h6 {
+  font-family: "함초롬돋움";
+}
+
+label {
+  font-family: "kyuri", "galmat", "함초롬바탕";
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.comm {
+  width: 70%;
+}
+
+
+

@@ -1,0 +1,140 @@
+    @charset "UTF-8";
+
+    @font-face {
+    font-family: "galmat";
+    src: url("galmat.ttf") format("truetype");
+    font-weight: normal;
+    }
+
+    @font-face {
+    font-family: "kyuri";
+    src: url("kyuri.ttf") format("truetype");
+    font-weight: normal;
+    }
+
+    @font-face {
+        font-family: "ssangmundong";
+        src: url("Typo_SsangmunDongB.ttf") format("truetype");
+        font-weight: normal;
+    }
+
+    @font-face {
+        font-family: "DXKPMB";
+        src: url("DXKPMB-KSCpc-EUC-H.ttf") format("truetype");
+        font-weight: normal;
+    }
+
+
+::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #E3E8F8;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #6b778b;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #668bcb;
+    }
+    ::selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+    ::-moz-selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+    ::-webkit-selection { background:#e1e1e1; color: #9d4545; text-shadow: none; }
+
+    body {
+        margin: 5%;
+        padding: auto;
+        background-color: #fff;
+        background-image: url("../img/back.png");
+        background-size: 300px;
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+
+.container {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.signup_session_box {
+    max-width: 420px;
+    padding: 64px 0 0;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.signup_box_header{
+    padding: 0 0 10px;
+    display: block;
+}
+
+.text_Gull{
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+                    font-family: "ssangmundong";
+    color: #3E588F;
+    font-size: 48px;
+    letter-spacing: -3px;
+}
+
+.input_row {
+    display: block;
+    width: 100%;
+    padding: 5px 10px 5px;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    text-align: left;
+}
+
+.join_title {
+    margin: 20px 0 10px;
+}
+.join_title label{
+                        font-family: "ssangmundong";
+    margin: 20px 0 10px;
+}
+
+.box {
+    background: #fff;
+    outline: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border: solid 1px #dadada;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.int{
+                font-family: "DXKPMB";
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    border : none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login {
+                font-family: "DXKPMB";
+    display: block;
+    width: 100%;
+    padding: 13px 0 13px;
+    border-radius: 6px;
+    border: solid 1px rgba(0,0,0,.15);
+    background-color: #3E588F;
+    box-sizing: border-box;
+    color: #FFFF;
+    cursor: pointer;
+}
